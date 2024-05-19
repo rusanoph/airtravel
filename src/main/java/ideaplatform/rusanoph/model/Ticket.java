@@ -17,6 +17,8 @@ public class Ticket {
     private LocalDate arrival_date;
     private LocalTime arrival_time;
 
+    private String carrier;
+
     private double price;
 
     public Duration getTimeTravel() {
@@ -59,6 +61,10 @@ public class Ticket {
         return arrival_time;
     }
 
+    public String getCarrier() {
+        return carrier;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -87,6 +93,10 @@ public class Ticket {
 
     public void setArrival_time(LocalTime arrival_time) {
         this.arrival_time = arrival_time;
+    }
+
+    public void setCarrier(String carrier) {
+        this.carrier = carrier;
     }
 
     public void setPrice(double price) {
